@@ -1,7 +1,7 @@
 const cors = require("cors");
 const express = require("express");
 const http = require("http");
-const https = require("https");
+// const https = require("https");
 const fs = require("fs");
 
 const app = express();
@@ -15,7 +15,7 @@ const options = {
 app.use(cors());
 app.use(express.json());
 
-https
+http
     .createServer(options, app)
     .listen(port, () => {
         console.log(`Brightspace-OAuth-Server-NodeJS listening on port ${port}`)
