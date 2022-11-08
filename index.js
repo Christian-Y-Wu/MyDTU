@@ -5,7 +5,7 @@ const https = require("https");
 const fs = require("fs");
 
 const app = express();
-const port = 3434;
+const port = process.env.PORT;
 const assetlinks = fs.readFileSync('.well-known/assetlinks.json');
 const options = {
     key:fs.readFileSync("cert/localhost-key.pem"),
