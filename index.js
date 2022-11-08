@@ -21,9 +21,9 @@ https
         console.log(`Brightspace-OAuth-Server-NodeJS listening on port ${port}`)
     })
 
-// app.listen(port,() => {
-//     console.log()
-// })
+app.get("/", (req, res) => {
+    res.send("Welcome to the MyDTU server");
+    });
 
 app.get('/.well-known/assetlinks.json', function(req, res, next){
     res.set('Content-Type', 'application/json');
