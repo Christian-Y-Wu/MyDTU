@@ -34,9 +34,11 @@ app.get('/redirecturi', async (req, res) => {
     const code = req.query.code;
     console.log("Code: " + code);
     console.log("Redirecting to application");
-    // // res.redirect('https://google.dk');
-    // res.rediret('https://10.0.2.2:3434)    
+    res.rediret('https://mydtu-app-server.herokuapp.com');
     // res.redirect('https://10.0.2.2:3434/redirecturi?code='+code);
+    // res.redirect('https://mydtu-app-server.herokuapp.com/redirecturi?code='+code);
+    
+  
 
 })
 
