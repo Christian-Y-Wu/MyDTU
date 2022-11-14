@@ -30,13 +30,13 @@ app.get('/.well-known/assetlinks.json', function(req, res, next){
     res.status(200).send(assetlinks);
 })
 
-app.get('/redirecturi', async (req, res) => {
-    const code = req.query.code;
-    console.log("Code: " + code);
-    console.log("Redirecting to application");
-    res.redirect('https://mydtu-app-server.herokuapp.com');
-    // res.redirect('https://10.0.2.2:3434/redirecturi?code='+code);
-    // res.redirect('https://mydtu-app-server.herokuapp.com/redirecturi?code='+code);
+// app.get('/redirecturi', async (req, res) => {
+//     const code = req.query.code;
+//     console.log("Code: " + code);
+//     console.log("Redirecting to application");
+//     res.redirect('https://mydtu-app-server.herokuapp.com');
+//     // res.redirect('https://10.0.2.2:3434/redirecturi?code='+code);
+//     // res.redirect('https://mydtu-app-server.herokuapp.com/redirecturi?code='+code);
     
   
 
