@@ -6,7 +6,9 @@ const fs = require("fs");
 
 const app = express();
 const port = process.env.PORT;
+const association = fs.readFilySync('.well-known/')
 const assetlinks = fs.readFileSync('.well-known/assetlinks.json');
+
 const options = {
     key:fs.readFileSync("cert/localhost-key.pem"),
     cert:fs.readFileSync("cert/localhost.pem"),
@@ -28,6 +30,10 @@ http
 app.get('/.well-known/assetlinks.json', function(req, res, next){
     res.set('Content-Type', 'application/json');
     res.status(200).send(assetlinks);
+})
+
+app.get('/.well-known/apple-app-site-association', function(req, res, next){
+    res.status(200).send(association);
 })
 
 // app.get('/redirecturi', async (req, res) => {
