@@ -1,9 +1,0 @@
-{
-    "applinks": {
-        "apps": [],
-        "details": [{
-            "appID": "[Oliver Thevarajah].[com.testing.mydtu]",
-            "paths": ["/redirecturi"]
-        }]
-    }
-}

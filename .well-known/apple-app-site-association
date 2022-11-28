@@ -1,0 +1,9 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [{
+            "appID": "8C5W66CM99.com.testing.mydtu",
+            "paths": ["*"]
+        }]
+    }
+}
