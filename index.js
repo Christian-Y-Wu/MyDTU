@@ -6,7 +6,7 @@ const fs = require("fs");
 
 const app = express();
 const port = process.env.PORT;
-const association = fs.readFilySync('.well-known/')
+const association = fs.readFileSync('.well-known/apple-app-site-association')
 const assetlinks = fs.readFileSync('.well-known/assetlinks.json');
 
 const options = {
