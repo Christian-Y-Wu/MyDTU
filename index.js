@@ -23,10 +23,6 @@ http
         console.log(`Brightspace-OAuth-Server-NodeJS listening on port ${port}`)
     })
 
-// app.get("/", (req, res) => {
-//     res.send("Welcome to the MyDTU server");
-//     });
-
 app.get('/.well-known/assetlinks.json', function(req, res, next){
     res.set('Content-Type', 'application/json');
     res.status(200).send(assetlinks);
@@ -36,15 +32,4 @@ app.get('/.well-known/apple-app-site-association', function(req, res, next){
     res.status(200).send(association);
 })
 
-// app.get('/redirecturi', async (req, res) => {
-//     const code = req.query.code;
-//     console.log("Code: " + code);
-//     console.log("Redirecting to application");
-//     res.redirect('https://mydtu-app-server.herokuapp.com');
-//     // res.redirect('https://10.0.2.2:3434/redirecturi?code='+code);
-//     // res.redirect('https://mydtu-app-server.herokuapp.com/redirecturi?code='+code);
-    
-  
-
-// })
 
