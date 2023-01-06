@@ -1,3 +1,5 @@
+//Christian Wu
+
 const cors = require("cors");
 const express = require("express");
 const http = require("http");
@@ -23,6 +25,7 @@ http
         console.log(`Brightspace-OAuth-Server-NodeJS listening on port ${port}`)
     })
 
+// Host files for App link and Universal Link
 app.get('/.well-known/assetlinks.json', function(req, res, next){
     res.set('Content-Type', 'application/json');
     res.status(200).send(assetlinks);
